@@ -23,7 +23,8 @@ public class ColisionDetection : MonoBehaviour
             Destroy(col.gameObject);
         }
         else if(col.gameObject.CompareTag("Piso")){
-        Destroy(gameObject);
+        transform.position=new Vector3(Random.Range(0,-1),10,Random.Range(0,1));
         }
+        Random.Range(0,3);
     }
 }
